@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./src/taskList.js" defer></script>
   <script src="./src/task.js" defer></script>
+  <script src="./src/taskList.js" defer></script>
   <script src="./src/index.js" defer></script>
 </head>
 <body>
@@ -16,28 +16,29 @@
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
       <select name="priority" id="priority">
-        <option value="high">High Priority</option>
-        <option value="medium">Medium Priority</option>
-        <option value="low">Low Priority</option>
+        <option value="1">High Priority</option>
+        <option value="2">Medium Priority</option>
+        <option value="3">Low Priority</option>
       </select>
       <label for="due-date">Due Date:</label>
-      <input type="date" id="due-date"/>
+      <input type="date" id="due-date" />
       <input type="submit" value="Create New Task">
     </form>
 
     <div id="list">
       <h2>My Todos</h2>
       <ul id="tasks">
-
+        
       </ul>
-      <button id="sort-tasks"><h2>Sort Tasks</h2></button>
-      <select name="priority" id="priority">
+      <select name="sort-tasks" id="sort-tasks">
         <option value="#">Sort Tasks</option>
         <option value="ASC">Ascending</option>
         <option value="DESC">Descending</option>
       </select>
     </div>
+
+    
   </div>
-  
+
 </body>
 </html>
